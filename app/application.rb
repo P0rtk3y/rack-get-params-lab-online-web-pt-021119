@@ -22,7 +22,7 @@ class Application
           resp.write "#{t}\n"
         end 
       end
-     elsif req.path.match(/add/)
+    elsif req.path.match(/add/)
       new_item = req.params["item"]
       if @@items.include?(new_item)
         @@cart << new_item
